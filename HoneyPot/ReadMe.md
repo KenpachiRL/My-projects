@@ -30,12 +30,4 @@ You can change IP address and port of the Honeypot on lines 9 and 10 <br>
 
 
 </p>
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+
