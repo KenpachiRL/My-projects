@@ -1,0 +1,1 @@
+click on the file and type what you would like the length of the generated random password to be

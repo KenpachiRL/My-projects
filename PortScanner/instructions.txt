@@ -1,0 +1,10 @@
+Portscanner.py will will perform scan either using tcp or udp scans
+
+1) install python-nmap by using the command "sudo pip install python-nmap" 
+make sure you use sudo otherwise, the code I wrote won't recognise that nmap was installed
+
+
+2) the code I invented will run from port 1 to 200, if you want to change the port range then edit the file and change the range values in line 18 and line 24
+
+3) then the next command is "sudo python3 Portscanner.py"
+

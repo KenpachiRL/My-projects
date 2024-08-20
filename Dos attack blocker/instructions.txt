@@ -1,0 +1,9 @@
+This code is a Dos attack blocker, it prevents Dos attack from occurring.
+The limit of packets that can be sent is 100. You can edit this by changing the value of the variable limit to whatever you want. To run the code type sudo python3 Dos_attack_blocker.py
+
+
+
+when an ip is blocked but you want to reallow it, type in the terminal the command: "sudo iptables -L" and then to delete the line you don't need type "sudo iptables -D INPUT 1" 
+
+
+you can ignore packetsender.py because Its just a code used to test if my dos blocker was working. What packetsender.py does is to send 100 packet per second to the target ip of my choice to simulate a dos attack.
