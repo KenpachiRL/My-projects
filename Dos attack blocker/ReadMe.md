@@ -27,6 +27,6 @@ My Python script uses the "scapy" library to capture and analyze incoming packet
 <p>
 You can edit the maximum number of allowed packets by changing the value of the variable "limit" to whatever you want. To run the code type sudo python3 Dos_attack_blocker.py
  <br>
-
+You can ignore packetsender.py because its just a code used to test if my dos blocker was working. What packetsender.py does is send 100 packets per second to the target IP of my choice to simulate a DOS attack.
 
 </p>
