@@ -1,3 +1,0 @@
-click the file hangman game, and the computer will pick a random word and you have to guess what the word is by typing what character you think is in the word. e.g. the letter E. 
-
-Remember, you only have 5 guesses that you can get wrong, after that you loose
