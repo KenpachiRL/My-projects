@@ -1,8 +1,10 @@
-<h1>Honeypot creation using python</h1>
+<h1>Dos Attack Blocker</h1>
 
 
 <h2>Description</h2>
-A honeypot is a decoy system, used to lure attackers and to study their attack techniques.
+A Dos attack is a type of attack in which the attacker typically floods the targeted host or network with traffic until the target can't respond or crashes, this prevents legitimate users from accessing their services and resources.
+
+A DOS blocker is a type of defense strategy in which a suspicious IP address that generates an excessive amount of network traffic is automatically detected and blocked to prevent a DOS attack from successfully occuring
 
 <br />
 
@@ -18,15 +20,13 @@ A honeypot is a decoy system, used to lure attackers and to study their attack t
 <h2>Code walk-through:</h2>
 
 <p>
-My Python code simulates a honeypot. It initially sets up a server that listens on a specified IP address and port. (My code supports up to 5 connections simultaneously). When a user tries to connect using the command "telnet {Ip address} {port number}", they are prompted to type a username and a password with 3 attempts allowed for each. Once authenticated, the server provides a command-line interface with several commands, such as ls, cat, whoami, and cd to specific directories (e.g., Desktop, Downloads, Documents). The attacker's input, such as the usernames, passwords, and commands executed are stored in the file named Honeypot.txt so that further analysis of the attacker's behavior can be done    
+My Python script uses the "scapy" library to capture and analyze incoming packets and track the packet rate per second for each source IP address. If an IP packet exceeds the packet rate limit(which is set to 100 by default), then the script will block the IP address by adding a rule to 'iptables'(iptables are used by the Kernel built-in firewall). While the code is running the packet rate is recalculated every second and the packet count is regularly resetted to maintain accurate monitoring. Root privileges are required to run the script because it interacts with the system firewall, so make sure you use Sudo when running the script.   
 </p>
 
 <h2>How to run my code:</h2>
 <p>
-You can change IP address and port of the Honeypot on lines 9 and 10 <br>
-1) make sure you download both my Honeypot code and my Honeypot log file. <br>
-2) open the terminal and type sudo python3 HoneyPot.py  <br>
-3) If you want to see if the honeypot really works then use another computer and type telnet {Ip address} {port number}. <br>
+You can edit the maximum number of allowed packets by changing the value of the variable "limit" to whatever you want. To run the code type sudo python3 Dos_attack_blocker.py
+ <br>
 
 
 </p>
