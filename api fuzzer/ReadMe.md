@@ -30,7 +30,7 @@ The purpose of my code is to find the list of possible paths to a URL and to ret
 
 <h2>How to run my code:</h2>
 <p>
-Open fuzz.py and in line 5, Replace the URL with anything of your choice e.g. "http://google.com/" then type in your terminal the following code: cat small.txt| python3 fuzz.py
+Open fuzz.py and in line 5, Replace the URL with anything of your choice(Use a website that you are sure will return a JSON)  then type in your terminal the following code: cat small.txt| python3 fuzz.py
 
 </p>
 
