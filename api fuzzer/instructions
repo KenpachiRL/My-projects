@@ -1,9 +1,0 @@
-Open fuzz.py and in line 5, Replace the URL with anything of your choice e.g. "http://google.com/" then type in your terminal the following code: cat small.txt| python3 fuzz.py
-
-
-This is an api fuzzer that will look for endpoints
-When it finds endpoints it will return a 200 code which means its successfull then it will return the JSON.
-The JSON might contain important sensitive information
-
-
-Code written by Greater
