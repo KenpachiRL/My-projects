@@ -30,34 +30,11 @@ The purpose of my code is to find the list of possible paths to a URL and to ret
 
 <h2>How to run my code:</h2>
 <p>
-1) install python-nmap by using the command "sudo pip install python-nmap" 
-make sure you use sudo otherwise, my code won't recognize that Nmap was installed<br>
-2) the code I invented will run from port 1 to 200 but if you want to change the port range then edit the file and change the range values in line 18 and line 24<br>
-3) After completing the above stages, type "sudo python3 Portscanner.py" to run the script<br>
+Open fuzz.py and in line 5, Replace the URL with anything of your choice e.g. "http://google.com/" then type in your terminal the following code: cat small.txt| python3 fuzz.py
 
 </p>
 
-<h2> What I learned: </h2>
-<p>I learned how .key work. For example if I run the python command: <br>
 
-udp_ports = nm['192.168.1.1']['udp'] <br>
-print(udp_ports) <br>
-
-
-then the output will look something like this: <br>
-
-{ <br>
-    53: { <br>
-        'protocol': 'udp', <br>
-        'name': 'domain', <br>
-        'state': 'open' <br> 
-    }, <br>
-    67: { <br>
-        'protocol': 'udp', <br>
-        'name': 'dhcps', <br>
-        'state': 'open' <br>
-    } <br>
-} <br>
 
 
 
